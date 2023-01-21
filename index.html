@@ -41,25 +41,22 @@
                 <p>Véus</p>
             </nav>
             <article>
-                <div class="thickness">
+                <div onclick="thick()" class="thickness">
                     <img src="image/thick-veil.jpeg" alt="Véu">
                     <h2>Renda Larga</h2>
                 </div>
-                <div class="thickness">
+                <div onclick="medium()" class="thickness">
                     <img src="image/medium-veil.jpeg" alt="Véu">
                     <h2>Renda Média</h2>
                 </div>
-                <div class="thickness">
+                <div onclick="thin()" class="thickness">
                     <img src="image/thin-veil.jpeg" alt="Véu">
                     <h2>Renda Fina</h2>
                 </div>
                 <div class="veil-bag">
                     <h2>Saquinho do véu</h2>
                     <p>Todos os nossos véus vem embalado por uma sacolinha de renda, também podendo ser usado para guardar todos os dias após o seu uso.</p>
-                    <div>
-                        <img src="icons/instagram.png" alt="Sacola do véu">
-                        <img src="icons/instagram.png" alt="Sacola do véu">
-                    </div>
+                    <img src="image/bag-veil.jpeg" alt="Sacola do véu">
                 </div>
             </article>
             <section>
@@ -73,7 +70,7 @@
                         </div>
                         <div>
                             <p><strong>Preço:</strong></p>
-                            <p id="price">R$ 80,00</p>
+                            <p id="price">60,00</p>
                         </div>
                     </div>
                 </div>
@@ -84,5 +81,24 @@
             <p>by <strong>Tiago Tinoco</strong></p>
         </footer>
     </div>
+    <script>
+        var description = document.getElementById('description');
+        var price = document.getElementById('price');
+
+        function thick() {
+            if (description.innerHTML === "blabla" || description.innerHTML === "bububu" && price.innerHTML === "65,00" || price.innerHTML === "78,00" ) {
+                description.innerHTML = "Este véu tem detalhes mais elaborados, seu bordado é grosso e lembram flores.";
+                price.innerHTML = "60,00";
+            }
+        }
+
+        function medium() {
+            if (description.innerHTML === "Este véu tem detalhes mais elaborados, seu bordado é grosso e lembram flores." || description.innerHTML === "bububu" && price.innerHTML === "60,00" || price.innerHTML === "78,00" ) {
+                description.innerHTML = "blabla";
+                price.innerHTML = "65,00";
+            }
+        }
+
+    </script>
 </body>
 </html>

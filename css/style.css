@@ -42,7 +42,7 @@ a {
 
 /* #region HEADER */
 header {
-    background-color: #6e44c8;
+    background-color: #8961de;
     border-left: 1px solid black;
     grid-area: l;
     padding: 0px 10px;
@@ -136,7 +136,7 @@ article {
 }
 
 .thickness {
-    background-color: #ffa6a6;
+    background-color: #9186aa;
     height: 240px;
     border-radius: 20px;
     padding: 0px 5px;
@@ -172,17 +172,15 @@ article {
 
 .veil-bag p {
     margin-top: 10px;
-}
-
-.veil-bag div {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .veil-bag img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-color: #9186aa;
+    padding: 10px;
 }
 /* #endregion ARTICLE */
 
@@ -205,7 +203,7 @@ section div {
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin: 40px 0px;
+    margin: 10px 0px;
 }
 
 section h2 {

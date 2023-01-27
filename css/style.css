@@ -5,18 +5,13 @@
 }
 
 body {
-    width: 100vw;
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #e3e3e3;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas: "r r l" "f f l";
-    grid-template-rows: 6fr 1fr;
+    display: flex;
 }
 
 h1 {
@@ -44,8 +39,14 @@ a {
 header {
     background-color: #8961de;
     border-left: 1px solid black;
-    grid-area: l;
     padding: 0px 10px;
+    width: 400px;
+    
+}
+
+header .fixed {
+    position: fixed;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,8 +104,7 @@ header .icons img {
 
 /* #region MAIN */
 main {
-    padding: 30px 50px;
-    grid-area: r;
+    padding: 20px 40px;
     color: #414141;
 }
 
@@ -129,9 +129,9 @@ nav p {
 
 /* #region ARTICLE */
 article {
-    margin-top: 60px;
     margin-left: 30px;
     display: flex;
+    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
@@ -176,8 +176,8 @@ article {
 }
 
 .veil-bag img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 40px;
     background-color: #9186aa;
     padding: 10px;
@@ -203,7 +203,20 @@ section div {
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin: 10px 0px;
+    margin: 10px 10px;
+}
+
+.details div {
+    margin-left: 20px;
+}
+
+.price {
+    display: flex;
+    margin-left: 20px;
+}
+
+#price {
+    margin-left: 5px;
 }
 
 section h2 {
@@ -212,16 +225,17 @@ section h2 {
 
 section p {
     font-size: 20px;
-    margin-left: 20px;
     margin-top: 10px;
 }
 
 section img {
+    background-color: #9186aa;
+    padding: 10px;
+    border-radius: 20px;
     width: 340px;
     height: 470px;
     margin-top: 20px;
     margin-left: 20px;
-    border-radius: 10px;
 }
 /* #endregion section */
 
@@ -230,7 +244,6 @@ section img {
 /* #region Footer */
 
 footer {
-    grid-area: f;
     padding: 10px 30px;
     display: flex;
     background-color: #a686d6;

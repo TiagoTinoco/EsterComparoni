@@ -8,7 +8,7 @@ var idMedium = document.getElementById('medium');
 var idThick = document.getElementById('Thick');
 
 var descriptionThin = "Um modelo clássico e elegante. Tecido de algodão e renda com 3,0cm de largura. Acompanha um porta véu com fita de cetim e detalhe em renda.";
-var descriptionMedium = "Um modelo delicado e charmoso. Tecido de algodão e rende com 3,0 cm de largura. Acompanha um porta véu com fita de cetim e detalhe em renda."; 
+var descriptionMedium = "Um modelo delicado e charmoso. Tecido de algodão e renda com 3,0 cm de largura. Acompanha um porta véu com fita de cetim e detalhe em renda."; 
 var descriptionThick = "Modelo floral e romântico. Tecido de algodão e renda com 5,2cm de largura. Acompanha um porta véu com fita de cetim e detalhe em renda";
 
 function thin() {

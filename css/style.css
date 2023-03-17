@@ -344,7 +344,28 @@ header .icons {
 
 }
 
+@media(max-width: 980px) {
+    .list {
+        display: grid;
+        gap: 10;
+        grid-template-columns: auto auto auto auto;
+        padding: 10px;
+    }
+    
+    .list-item {
+        padding: 20px;
+    }
+}
+
 @media(max-width: 900px) {
+
+    .list {
+        display: grid;
+        gap: 10;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        margin-left: 5px;
+    }
 
 header .fixed {
     position: relative;
@@ -378,7 +399,15 @@ header .icons {
 }
 
 @media(max-width: 812px) {
-    
+
+    .list {
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .list-item {
+        padding: 0px;
+    }
 
 section .mobile {
     display: flex;

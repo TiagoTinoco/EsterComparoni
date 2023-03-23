@@ -239,6 +239,10 @@ section p {
     margin-top: 10px;
 }
 
+section #description {
+    width: 33em;
+}
+
 
 /* #endregion section */
 
@@ -339,6 +343,10 @@ header .icons {
     width: 10%;
     display: flex;
     justify-content: space-evenly;
+}
+
+section #description {
+    width: auto;
 }
 
 }

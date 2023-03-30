@@ -1,4 +1,4 @@
-let veilsListDiv = document.getElementsByClassName('list')[0];
+let veilsListDiv = document.getElementsByClassName('veil-list')[0];
 
 var names = document.getElementById('name');
 var description = document.getElementById('description');
@@ -9,7 +9,7 @@ function fillList(){
     VEILS.forEach((veilObject, index) => {
         let veilCardHTML = 
         `<a class="list-item" href="#img">
-            <div onclick="onSelectVeil(${index})" class="thickness">
+            <div onclick="onSelectVeil(${index})" class="card">
                 <img src="${veilObject.image}" alt="Véu">
                 <h2>${veilObject.name}</h2>
             </div>
@@ -26,7 +26,7 @@ function onSelectVeil(index){
 
     names.innerHTML = VEILS[index].name;
     description.innerHTML = VEILS[index].description;
-    price.innerHTML = VEILS[index].price;
+    price.innerHTML = VEILS[index].price.toFixed(2);
     image.src = VEILS[index].image;
 }
 

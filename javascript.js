@@ -26,7 +26,7 @@ function onSelectVeil(index){
 
     names.innerHTML = VEILS[index].name;
     description.innerHTML = VEILS[index].description;
-    price.innerHTML = VEILS[index].price.toFixed(2);
+    price.innerHTML = VEILS[index].price;
     image.src = VEILS[index].image;
 }
 

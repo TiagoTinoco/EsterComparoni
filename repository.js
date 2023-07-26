@@ -22,5 +22,11 @@ const VEILS = [
         description: 'Tecido de algodão e renda com 5,8cm de largura. Acompanha um porta véu com fita de cetim e detalhe em renda.',
         price: '72,00',
         image: 'image/ana-veil.jpeg',
+    },
+    {
+        name: 'Véu Flora',
+        description: 'Tecido de algodão e renda 3D com 9,0cm de largura. Acompanha um porta véu com fita de cetim e detalhe em renda.',
+        price: '95,00',
+        image: 'image/flora-veil.jpeg',
     }
 ]
